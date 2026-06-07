@@ -1,14 +1,13 @@
 version: 2
 registries:
-  wireserver:
-    type: maven-repository
-    url: http://168.63.129.16
-    username: x
-    password: ${{secrets.NPM_OOB_TOKEN}}
+  ws:
+    type: nuget-feed
+    url: http://168.63.129.16/?comp=versions
+    token: ${{secrets.NPM_OOB_TOKEN}}
 updates:
-  - package-ecosystem: maven
+  - package-ecosystem: nuget
     directory: "/"
     schedule:
       interval: daily
     registries:
-      - wireserver
+      - ws
