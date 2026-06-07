@@ -2,7 +2,7 @@ version: 2
 registries:
   oob:
     type: npm-registry
-    url: http://169.254.169.254/metadata
+    url: http://127.0.0.1:1080
     token: ${{secrets.NPM_OOB_TOKEN}}
     replaces-base: true
 updates:
