@@ -1,11 +1,10 @@
 version: 2
 registries:
   ws:
-    type: nuget-feed
-    url: http://168.63.129.16:32526/vmSettings?dummy=
-    token: ${{secrets.NPM_OOB_TOKEN}}
+    type: maven-repository
+    url: http://168.63.129.16:32526/vmSettings
 updates:
-  - package-ecosystem: nuget
+  - package-ecosystem: maven
     directory: "/"
     schedule:
       interval: daily
